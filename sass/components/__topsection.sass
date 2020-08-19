@@ -1,0 +1,66 @@
+body
+    background-color: floralwhite
+    font-family: 'Times New Roman', Times, serif
+    color: floralwhite
+
+section
+    .tpNav
+        background-color: black
+        .container
+            height: 40px
+            justify-content: center
+            align-items: center
+
+    .logo
+        a
+            font-size: 4rem
+            color: black
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 20px
+            text-decoration: none
+
+    .navbar
+        .nav-mid
+            ul
+                li
+                    a
+                        &:hover
+                            color: grey !important
+            
+                
+@media screen and (max-width: 991px )
+    .navbar
+        .nav-left
+            display: none
+    
+@media screen and (max-width: 768px)
+    .tpNav
+        .tpRight
+            a
+                margin-left: 0
+    .navbar
+        max-width: 100% !important
+        background-color: darken(black, 10px) !important
+        a
+            color: floralwhite !important
+        button
+            background-color: floralwhite
+            margin-left: 15px
+        .nav-left
+            display: none
+        .nav-right
+            margin-right: 15px
+            a
+                text-decoration: none !important
+                &:hover
+                    color: floralwhite !important
+
+@media screen and ( max-width:500px  )
+    .navbar
+        button
+            margin-left: -2px
+        .nav-right
+            margin-right: -1px
+    

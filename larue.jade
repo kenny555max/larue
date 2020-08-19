@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+        //- my links
+        link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet", href="fontawesome-free-5.13.0-web/css/all.min.css")
+        link(rel="stylesheet", href="css/larue.css")
+
+        //- my script
+        script(src="jquery/jquery.min.js")
+        script(src="bootstrap/js/bootstrap.min.js")
+        script(src="js/main.js")
+        script(src="php-email-form/validate.min.js")
+    body
+
+        section
+            .tpNav
+                .container.d-flex
+                    .tpLeft.mr-auto
+                        a.text-white(href="") PURCHASE
+                            i.fa.fa-shopping-bag.ml-2(aria-hidden='true')
+                        a.text-white.ml-3(href="") SUBSCRIBE
+                            i.fa.fa-sign-language.ml-2(aria-hidden='true')
+                    .tpRight
+                        a.text-white(href="https://www.facebook.com")
+                            i.fab.fa-facebook-f(aria-hidden='true')
+                        a.text-white.ml-3(href="https://www.twitter.com")
+                            i.fab.fa-twitter(aria-hidden='true')
+                        a.text-white.ml-3(href="https://www.instagram.com")
+                            i.fab.fa-instagram(aria-hidden='true')
+                        a.text-white.ml-3(href="https://www.pinterest.com")
+                            i.fab.fa-pinterest-p(aria-hidden='true')
+                        a.text-white.ml-3(href="https://www.google.com")
+                            i.fab.fa-google(aria-hidden='true')
+
+            
+            .logo
+                a(href="") LUXIES
+
+            
+            nav.navbar.navbar-expand-lg.navbar-light
+                .container
+                    .nav-left
+                        span.navbar-toggler-icon
+                    button.navbar-toggler(data-target='#my-nav', data-toggle='collapse', aria-controls='my-nav', aria-expanded='false', aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    .collapse.navbar-collapse#my-nav.nav-mid
+                        ul.navbar-nav.ml-auto.mr-auto
+                            li.nav-item
+                                a.nav-link(href='#')
+                                    Item HOME 
+                                    span.sr-only (current)
+                            li.nav-item.active
+                                a.nav-link(href='#', tabindex='-1', aria-disabled='true')
+                                    Item POST FORMATS
+                            li.nav-item.active
+                                a.nav-link(href='#', tabindex='-1', aria-disabled='true')
+                                    Item ABOUT
+                            li.nav-item.active
+                                a.nav-link(href='#', tabindex='-1', aria-disabled='true')
+                                    Item TRAVEL
+                            li.nav-item.active
+                                a.nav-link(href='#', tabindex='-1', aria-disabled='true')
+                                    Item CONTACT
+                    .nav-right
+                        a.text-dark(href="")
+                            i.fa.fa-search(aria-hidden='true')
+
+
+            .wrapper
+                .container
+                    .content-sec
+                        .imgBox.set-bg(data-setbg="imgs/Banner1.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering1.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering2.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering6.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering7.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/banner5.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/banner6.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering12.jpg")
+                        .imgBox.set-bg(data-setbg="imgs/hovering10.jpg")
+
+
+
+            .footer
+                .container
+                    .first
+                        h1 LUXIES
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat animi rerum non quo obcaecati temporibus magnam sint perspiciatis soluta veniam. Saepe officiis ab laboriosam, ratione obcaecati expedita animi. Porro, cupiditate.
+                        .social
+                            .row.m-0
+                                a.ml-3.text-white(href="")
+                                    i.fab.fa-facebook-f(aria-hidden='true')
+                                a.ml-3.text-white(href="")
+                                    i.fab.fa-instagram(aria-hidden='true')
+                                a.ml-3.text-white(href="")
+                                    i.fab.fa-twitter(aria-hidden='true')
+                                a.ml-3.text-white(href="")
+                                    i.fab.fa-pinterest-p(aria-hidden='true')
+                                a.ml-3.text-white(href="")
+                                    i.fab.fa-google-plus(aria-hidden='true')
+                                a.ml-3.text-white(href="")
+                                    i.fa.fa-wifi(aria-hidden='true')
+                    .second.ml-4
+                        h6 LATEST POSTS
+                        .sec
+                            .row.mb-4
+                                img(src="imgs/hovering6.jpg", alt="")
+                                .text.ml-4
+                                    p NOTHING IS PROMISED
+                                    span SEPTEMBER 10, 2016
+                        .empty
+                        .sec
+                            .row.mb-4
+                                img(src="imgs/hovering10.jpg", alt="")
+                                .text.ml-4
+                                    p LAST NIGHT WAS REAL
+                                    span SEPTEMBER 19, 2016
+                        .empty
+                        .sec
+                            .row
+                                img(src="imgs/hovering6.jpg", alt="")
+                                .text.ml-4
+                                    p LAPOINT VINNAIRE
+                                    span SEPTEMBER 18, 2016
+                    .third
+                        h6 NEWSLETTER
+                        .row
+                            input(type="email", class="email" placeholder="Enter Your Mial" data-msg="Enter a valid mail" data-rule="milen:4" required)
+                            button.btn(type="submit") SUBSCRIBE
+                            .validate
